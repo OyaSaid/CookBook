@@ -1,0 +1,22 @@
+apply from: "$rootDir/common-android-library.gradle"
+android {
+    namespace 'com.oyaness.cookbook.menu'
+}
+
+dependencies {
+    api project(Modules.menuApi)
+    implementation project(Modules.data)
+    implementation project(Modules.common_ui)
+
+    implementation(Lifecycle.lifecycle_viewmodel)
+
+
+    implementation(ComposeLibs.core)
+
+    //injection
+    compileOnly(Dagger.annotations)
+    implementation(Dagger.dagger)
+    implementation(Dagger.dagger_android)
+    kapt(Dagger.dagger_compiler)
+    kapt(Dagger.dagger_android_compiler)
+}

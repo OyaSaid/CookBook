@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "image": "bread.jpg",
+    "name": "cat_baked_goods"
+  },
+  {
+    "id": 2,
+    "image": "bread.jpg",
+    "name": "cat_salads"
+  },
+  {
+    "id": 3,
+    "image": "bread.jpg",
+    "name": "cat_meat"
+  },
+  {
+    "id": 4,
+    "image": "bread.jpg",
+    "name": "cat_deserts"
+  },
+  {
+    "id": 5,
+    "image": "bread.jpg",
+    "name": "cat_pasta"
+  },
+  {
+    "id": 6,
+    "image": "bread.jpg",
+    "name": "cat_soups"
+  },
+  {
+    "id": 7,
+    "image": "bread.jpg",
+    "name": "cat_brunch"
+  }
+]

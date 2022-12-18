@@ -1,0 +1,8 @@
+apply from: "$rootDir/common-android-library.gradle"
+android {
+    namespace 'com.oyaness.cookbook.menu.api'
+}
+
+dependencies {
+
+}

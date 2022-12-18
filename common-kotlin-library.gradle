@@ -1,0 +1,23 @@
+apply plugin: 'kotlin'
+apply plugin: 'kotlin-kapt'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+
+    //Kotlin
+    implementation Kotlin.core
+
+    //Dependency Injection
+    implementation Koin.core
+
+    //Testing
+    testImplementation Testing.junit
+    testImplementation Kotlin.test
+    testImplementation Testing.mockito
+    testImplementation Testing.assertj
+
+    //Logging
+    implementation Timber.timber
+}

@@ -1,0 +1,14 @@
+apply from: "$rootDir/common-android-library.gradle"
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    namespace 'com.oyaness.cookbook.network'
+}
+
+dependencies {
+    implementation project(Modules.data)
+
+    implementation(platform(Firebase.bom))
+    implementation(Firebase.database)
+}
+

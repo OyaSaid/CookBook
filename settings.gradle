@@ -1,0 +1,8 @@
+rootProject.name = "CookBook"
+include ':app'
+include ':data'
+include ':cache'
+include ':network'
+include ':common-ui'
+include ':menu:api'
+include ':menu:implementation'
