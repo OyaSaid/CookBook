@@ -15,4 +15,12 @@ dependencies {
 //    kapt(Hilt.compiler)
 
     implementation(Dagger.dagger_android)
+
+    //compose
+    implementation(Compose.core)
+    implementation(Compose.material)
+    implementation(Compose.preview)
+
+    //extra
+    implementation(Lottie.core)
 }

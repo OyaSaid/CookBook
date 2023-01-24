@@ -10,8 +10,10 @@ dependencies {
 
     implementation(Lifecycle.lifecycle_viewmodel)
 
-
-    implementation(ComposeLibs.core)
+    //compose
+    implementation(Compose.core)
+    implementation(Compose.material)
+    implementation(Compose.navigation)
 
     //injection
     compileOnly(Dagger.annotations)

@@ -13,16 +13,22 @@ object Timber {
     private const val version = "5.0.1"
     const val timber = "com.jakewharton.timber:timber:${version}"
 }
+
 object Dagger {
     /** https://github.com/google/dagger */
     private const val version = "2.44.2"
     const val annotations = "org.glassfish:javax.annotation:10.0-b28"
     const val anvil_plugin = "com.squareup.anvil:gradle-plugin:2.4.3"
     const val dagger = "com.google.dagger:dagger:${version}"
-    const val dagger_compiler ="com.google.dagger:dagger-compiler:${version}"
-    const val dagger_android ="com.google.dagger:dagger-android-support:${version}"
-    const val dagger_android_compiler ="com.google.dagger:dagger-android-processor:${version}"
+    const val dagger_compiler = "com.google.dagger:dagger-compiler:${version}"
+    const val dagger_android = "com.google.dagger:dagger-android-support:${version}"
+    const val dagger_android_compiler = "com.google.dagger:dagger-android-processor:${version}"
 }
+
+object Lottie {
+    const val core = "com.airbnb.android:lottie-compose:5.2.0"
+}
+
 object Koin {
     private const val version = "3.1.4"
 
@@ -54,12 +60,15 @@ object Koin {
     const val koin_compose = "io.insert-koin:koin-androidx-compose:$version"
 }
 
-object ComposeLibs {
+object Compose {
     // Integration with activities
     const val core = "androidx.activity:activity-compose:1.3.1"
 
     // Compose Material Design
     const val material = "androidx.compose.material:material:1.0.5"
+
+    //Preview
+    const val preview = "androidx.compose.ui:ui-tooling-preview:1.0.5"
 
     // Animations
     const val animations = "androidx.compose.animation:animation:1.0.5"
@@ -112,10 +121,6 @@ object Retrofit {
     const val rxJavaAdapter3 = "com.github.akarnokd:rxjava3-retrofit-adapter:3.0.0"
 }
 
-object Compose {
-    const val navigation = "androidx.navigation:navigation-compose:2.4.0-rc01"
-}
-
 object OkHttp {
     private const val version = "4.5.0"
     const val core = "com.squareup.okhttp3:okhttp:$version"
@@ -159,7 +164,7 @@ object AndroidX {
     const val multidex = "androidx.multidex:multidex:$multidex_version"
     const val ktx = "androidx.core:core-ktx:1.2.0"
 
-    const val appcompat ="androidx.appcompat:appcompat:1.3.1"
+    const val appcompat = "androidx.appcompat:appcompat:1.3.1"
     const val recyclerview = "androidx.recyclerview:recyclerview:1.1.0"
 }
 
