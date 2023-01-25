@@ -1,8 +1,11 @@
 apply from: "$rootDir/common-android-library.gradle"
+apply plugin: 'org.jetbrains.kotlin.android'
 android {
     namespace 'com.oyaness.cookbook.menu.api'
 }
 
 dependencies {
 
+implementation 'androidx.core:core-ktx:+'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
 }

@@ -3,6 +3,7 @@ plugins {
     id("kotlin-android")
     id("kotlin-kapt")
     id("com.google.gms.google-services")
+    id("org.jetbrains.kotlin.android")
 }
 
 android {
@@ -52,9 +53,8 @@ dependencies {
 
     implementation(platform(Firebase.bom))
 
-    implementation(Kotlin.core)
-//    implementation(Koin.core)
-
+    implementation(Kotlin.core_jdk7)
+    implementation(AndroidX.ktx)
 
     //injection
     compileOnly(Dagger.annotations)

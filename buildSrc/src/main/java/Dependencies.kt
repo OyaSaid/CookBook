@@ -3,10 +3,13 @@
  * @date 27.12.2021
  */
 object Kotlin {
-    private const val version = "1.7.20"
-
-    const val core = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${version}"
+    private const val version = "1.2.10"
+    const val core = "org.jetbrains.kotlin:kotlin-stdlib:1.4.10"
+    const val core_jdk7 = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${version}"
     const val test = "org.jetbrains.kotlin:kotlin-test-junit:${version}"
+
+    const val android_tools_build_gradle = "com.android.tools.build:gradle:7.3.1"
+    const val kotlin_gradle_plugin ="org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10"
 }
 
 object Timber {
@@ -61,17 +64,20 @@ object Koin {
 }
 
 object Compose {
+    private const val version = "1.3.1"
     // Integration with activities
     const val core = "androidx.activity:activity-compose:1.3.1"
+    const val runtime = "androidx.compose.runtime:runtime:1.3.3"
 
     // Compose Material Design
-    const val material = "androidx.compose.material:material:1.0.5"
+    const val material = "androidx.compose.material:material:$version"
 
     //Preview
     const val preview = "androidx.compose.ui:ui-tooling-preview:1.0.5"
+    const val ui = "androidx.compose.ui:ui:1.3.3"
 
     // Animations
-    const val animations = "androidx.compose.animation:animation:1.0.5"
+    const val animations = "androidx.compose.animation:animation:$version"
 
     // Tooling support (Previews, etc.)
     const val tooling = "androidx.compose.ui:ui-tooling:1.0.5"

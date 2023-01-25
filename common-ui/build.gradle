@@ -1,5 +1,4 @@
 apply from: "$rootDir/common-android-library.gradle"
-//apply plugin: 'dagger.hilt.android.plugin'
 
 android {
     namespace 'com.oyaness.cookbook.common_ui'
@@ -17,9 +16,9 @@ dependencies {
     implementation(Dagger.dagger_android)
 
     //compose
-    implementation(Compose.core)
-    implementation(Compose.material)
-    implementation(Compose.preview)
+//    implementation(Compose.core)
+//    implementation(Compose.material)
+//    implementation(Compose.preview)
 
     //extra
     implementation(Lottie.core)

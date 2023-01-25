@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'org.jetbrains.kotlin.android'
 
 android {
     compileSdkVersion Config.compileSdkVersion
@@ -20,6 +21,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+//    kotlinOptions {
+//        jvmTarget = "1.8"
+//    }
+
     compileOptions {
         sourceCompatibility = 1.8
         targetCompatibility = 1.8
@@ -31,7 +37,8 @@ repositories {
 }
 
 dependencies {
-    implementation Kotlin.core
+//    implementation Kotlin.core
+//    implementation Kotlin.core_jdk7
 
     //Dependency Injection
     implementation Koin.core

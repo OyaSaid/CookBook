@@ -7,7 +7,7 @@ targetCompatibility = 1.8
 dependencies {
 
     //Kotlin
-    implementation Kotlin.core
+    implementation Kotlin.core_jdk7
 
     //Dependency Injection
     implementation Koin.core
