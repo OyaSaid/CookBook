@@ -1,7 +1,7 @@
 package com.oyaness.cookbook.injection
 
 import com.oyaness.cookbook.CookbookApplication
-import com.oyaness.cookbook.menu.di.MenuModule
+//import com.oyaness.cookbook.menu.di.MenuModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector

@@ -18,6 +18,5 @@ class CookbookApplication :DaggerApplication() {
         super.onCreate()
         component.inject(this)
     }
-
     override fun applicationInjector(): AndroidInjector<out DaggerApplication>  = component
 }

@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.oyaness.cookbook.common_ui.base.BaseInjectionActivity
 import com.oyaness.cookbook.menu.api.navigation.MenuNavigator
+//import com.oyaness.cookbook.menu.api.navigation.MenuNavigator
 import javax.inject.Inject
 
 class MainActivity : BaseInjectionActivity() {

@@ -1,9 +1,9 @@
 plugins {
     id("com.android.application")
-    id("kotlin-android")
     id("kotlin-kapt")
     id("com.google.gms.google-services")
-    id("org.jetbrains.kotlin.android")
+    id("kotlin-android")
+//    id("org.jetbrains.kotlin.android")
 }
 
 android {
@@ -32,9 +32,7 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
+
     namespace = "com.oyaness.cookbook"
 }
 
@@ -51,10 +49,10 @@ dependencies {
     implementation(project(Modules.menuImplementation))
 
 
-    implementation(platform(Firebase.bom))
+//    implementation(platform(Firebase.bom))
 
-    implementation(Kotlin.core_jdk7)
-    implementation(AndroidX.ktx)
+//    implementation(Kotlin.core_jdk7)
+//    implementation(AndroidX.ktx)
 
     //injection
     compileOnly(Dagger.annotations)
