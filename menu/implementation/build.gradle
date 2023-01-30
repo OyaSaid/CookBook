@@ -1,5 +1,5 @@
 apply from: "$rootDir/common-android-library.gradle"
-apply plugin: 'org.jetbrains.kotlin.android'
+//apply plugin: 'org.jetbrains.kotlin.android'
 android {
     namespace 'com.oyaness.cookbook.menu'
 
@@ -8,36 +8,42 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.3.0"
+        kotlinCompilerExtensionVersion = Compose.compose_kotlin_compiler
     }
 }
 
 dependencies {
     api project(Modules.menuApi)
-    implementation project(Modules.data)
+//    implementation project(Modules.data)
     implementation project(Modules.common_ui)
 
-    implementation(Lifecycle.lifecycle_viewmodel)
-    implementation(AndroidX.ktx)
+//    implementation(Lifecycle.lifecycle_viewmodel)
+//    implementation(AndroidX.ktx)
 
     //compose
-    implementation(Compose.core)
+    implementation(Compose.activity)
     implementation(Compose.runtime)
-//    implementation(Compose.material)
+    implementation(Compose.ui)
+    implementation(Compose.foundation)
+    implementation(Compose.material)
+    implementation (Compose.preview)
+
 //    implementation(Compose.navigation)
 //    implementation(Compose.ui)
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
-    implementation "androidx.compose.ui:ui:$compose_ui_version"
-    implementation "androidx.compose.ui:ui-tooling-preview:$compose_ui_version"
-    implementation 'androidx.compose.material:material:1.2.0'
-    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_ui_version"
+//    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
+//    implementation "androidx.compose.ui:ui:1.2.0"
+//
+//    implementation 'androidx.compose.material:material:1.2.0'
+//    androidTestImplementation "androidx.compose.ui:ui-test-junit4:1.2.0"
+
+//    debugImplementation "androidx.compose.ui:ui-tooling:1.2.0"
+//    debugImplementation "androidx.compose.ui:ui-test-manifest:1.2.0"
+
 
     //injection
     compileOnly(Dagger.annotations)
     implementation(Dagger.dagger)
     implementation(Dagger.dagger_android)
-    debugImplementation "androidx.compose.ui:ui-tooling:$compose_ui_version"
-    debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_ui_version"
     kapt(Dagger.dagger_compiler)
     kapt(Dagger.dagger_android_compiler)
 }

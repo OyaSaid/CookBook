@@ -2,6 +2,14 @@ apply from: "$rootDir/common-android-library.gradle"
 
 android {
     namespace 'com.oyaness.cookbook.common_ui'
+
+    buildFeatures {
+        compose = true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = Compose.compose_kotlin_compiler
+    }
 }
 
 kapt {
@@ -9,17 +17,18 @@ kapt {
 }
 
 dependencies {
-    implementation(AndroidX.appcompat)
+//    implementation(AndroidX.appcompat)
 //    implementation(Hilt.android)
 //    kapt(Hilt.compiler)
 
+    //injection
     implementation(Dagger.dagger_android)
 
     //compose
-//    implementation(Compose.core)
-//    implementation(Compose.material)
-//    implementation(Compose.preview)
+    implementation(Compose.ui)
+    implementation(Compose.material)
+
 
     //extra
-    implementation(Lottie.core)
+//    implementation(Lottie.core)
 }
